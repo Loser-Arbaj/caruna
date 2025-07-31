@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/create.css">
+</head>
+
+<body>
+
+
+    <div class="container d-flex flex-column justify-content-center align-items-center min-vh-100 position-relative">
+        <!-- Back Arrow -->
+        <a href="./index.html">
+            <div class="back-btn d-flex justify-content-start position-absolute top-0 start-0 p-3 btn-new">
+                <i class="fa-solid fa-arrow-left"></i>
+            </div>
+        </a>
+        <!-- Logo -->
+        <div class="text-center mb-4">
+            <img src="./assets/image/logo.png" alt="logo">
+        </div>
+        <!-- Header -->
+        <div class="text-center mb-4">
+            <h4>Create Account</h4>
+            <p class="text-muted">Please fill this form & create a new account</p>
+        </div>
+
+        <!-- Form Card -->
+        <div class="w-100 form-ready">
+            <form>
+                <div class="mb-3">
+                    <input type="text" class="form-control" placeholder="Name" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="email" class="form-control" placeholder="Email Address" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="tel" class="form-control" placeholder="Phone Number" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Create New Password" required>
+                </div>
+
+                <div class="mb-3">
+                    <input type="password" class="form-control" placeholder="Confirm Your Password" required>
+                </div>
+
+                <div class="form-check mb-3">
+                    <input class="form-check-input" type="checkbox" id="terms" required>
+                    <label class="form-check-label text-muted" for="terms">
+                        Accept all the <a href="#" class="small-link">Terms & Conditions</a>
+                    </label>
+                </div>
+
+                <div class="d-grid mb-3">
+                    <a href="#" class="btn">sign up</a>
+                </div>
+
+                <p class="text-center text-muted small">
+                    Already have an account? <a href="./login.html" class="small-link">Log In</a>
+                </p>
+
+            </form>
+        </div>
+    </div>
+
+    <!-- proper js  -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <!-- my js  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/FAQ.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./spares.html">Spares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#footer">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="./login.html" class="small-link position-relative">
+                                <i class=" fa-solid fa-cart-shopping text-dark plane"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="btn">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- banner  -->
+        <section class="banner text-light d-flex justify-content-center align-items-center">
+            <h1>Frequently <span class="highlight">Asked</span> Questions</h1>
+        </section>
+        <!-- banner end  -->
+        <!-- FAQ Section -->
+        <section class="faq py-5">
+            <div class="container ">
+                <div class="row g-4 align-items-start">
+
+                    <!-- FAQ Left -->
+                    <div class="col-md-7">
+                        <h4><strong>Frequently <span class="text-danger">Asked</span> Question</strong></h4>
+                        <div class="accordion mt-4" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What all do you check during inspection of our car ?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We perform a full-body and engine checkup...</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Will you charge for our car inspection?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Charges depend on the type of inspection requested.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Do Carune provide home inspection for car?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, we offer home inspection in select areas.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Can I book my appointment through mobile APP ?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, our mobile app supports appointment booking.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        What all kind of services do Carune provide?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We offer repair, maintenance, diagnostics, etc.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+                                        What sort of spare parts and engine oils are used in the servicing?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We use OEM-grade parts and high-quality engine oils.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Contact Box -->
+                    <div class="col-md-5">
+                        <figure>
+                            <img src="./assets/image/faq-faq.png" alt="askinf">
+                        </figure>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- faq section end -->
+    </main>
+    <!-- foot  -->
+    <footer class="footer" id="footer">
+        <div class="container text-center text-white">
+            <h2 class="mb-1 text-danger">
+                <img src="./assets/image/logo.png" alt="logo">
+            </h2>
+            <p class="mb-2 small">Do you have a question? Feel free to contact</p>
+            <h5 class="text-light mb-4">CONTACT US</h5>
+
+            <div class="row align-items-center text-md-center mb-4">
+                <div class="col-md-12 py-4">
+                    <div class="row g-3 text-danger text-center ">
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <h6 class="mb-1">Address:</h6>
+                                <p class="mb-0 small">Newtown , Kolkata</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-envelope icon"></i>
+                                <h6 class="mb-1">Email Address:</h6>
+                                <p class="mb-0 small">Carune34@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-phone icon"></i>
+                                <h6 class="mb-1">Contact No:</h6>
+                                <p class="mb-0 small">+91-1234567890</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-user icon"></i>
+                                <h6 class="mb-2">Follow Us</h6>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <i class="fab fa-facebook-f text-danger"></i>
+                                    <i class="fab fa-twitter text-danger"></i>
+                                    <i class="fab fa-instagram text-danger"></i>
+                                    <i class="fab fa-youtube text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-start text-white bg-dark p-4">
+                <div class="col-md-3">
+                    <h6>Our Services</h6>
+                    <ul class="list-unstyled small">
+                        <li>Repair</li>
+                        <li>Maintenance</li>
+                        <li>Diagnostic</li>
+                        <li>Oil Change</li>
+                        <li>Brake Repair Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled small">
+                        <li>About Company</li>
+                        <li>Spares</li>
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li>Careers</li>
+                        <li>Features</li>
+                        <li>Customer Feedback</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Get Our Newsletter</h6>
+                    <p class="small">If you want weekly updates about new offers and discounts, signup below.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control  bg-danger border-0 text-white"
+                            placeholder="Enter your email address">
+                        <a class="btn"><i class="fas fa-arrow-right text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            .<div class="mt-4 bg-danger text-white p-2">
+                <p class="small mb-0">© 2023 Carune. All rights reserved.</p>
+            </div>
+    </footer>
+    <!-- foot end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- proper js  -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

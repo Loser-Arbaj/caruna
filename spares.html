@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/spares.css">
+</head>
+
+<body>
+    <!-- <header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./about.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Spares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="./login.html" class="small-link  position-relative">
+                                <i class=" fa-solid fa-cart-shopping text-dark plane"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="btn">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- banner  -->
+        <section class="banner text-light d-flex justify-content-center align-items-center flex-column">
+            <h1>Spare <span class="highlight">parts</span></h1>
+            <p class="text-light">Find the best Curated custom Services for your car</p>
+        </section>
+        <!-- banner end  -->
+        <!-- search bar  -->
+        <section class="search-grid">
+            <div class="container mt-5">
+                <!-- Breadcrumb -->
+                <div class="mb-3">
+                    <small class="text-muted"> <strong>Home ></strong> Spares</small>
+                </div>
+                <h4>
+                    Find the <span class="label-highlight">best curated</span> Spare Parts
+                </h4>
+
+                <div class="row g-2 mt-3 align-items-start">
+                    <!-- Manufacturer -->
+                    <div class="col-lg-3 dropdown">
+                        <button class="btn-new dropdown-toggle w-100" type="button" id="dropdownManufacturer"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Manufacturer
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownManufacturer">
+                            <li><a class="dropdown-item">Honda</a></li>
+                            <li><a class="dropdown-item">Toyota</a></li>
+                            <li><a class="dropdown-item">Hyundai</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Model -->
+                    <div class="col-lg-2 dropdown">
+                        <button class="btn-new dropdown-toggle w-100" type="button" id="dropdownModel"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Model
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownModel">
+                            <li><a class="dropdown-item">City</a></li>
+                            <li><a class="dropdown-item">Civic</a></li>
+                            <li><a class="dropdown-item">Corolla</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Year Range -->
+                    <div class="col-lg-3 dropdown">
+                        <button class="btn-new dropdown-toggle w-100" type="button" id="dropdownYear"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Year Range
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownYear">
+                            <li><a class="dropdown-item">2010 - 2015</a></li>
+                            <li><a class="dropdown-item">2016 - 2020</a></li>
+                            <li><a class="dropdown-item">2021 - 2024</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Variant -->
+                    <div class="col-lg-2 dropdown">
+                        <button class="btn-new dropdown-toggle w-100" type="button" id="dropdownVariant"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Select Variant
+                        </button>
+                        <ul class="dropdown-menu w-100" aria-labelledby="dropdownVariant">
+                            <li><a class="dropdown-item">Petrol</a></li>
+                            <li><a class="dropdown-item">Diesel</a></li>
+                            <li><a class="dropdown-item">Electric</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Search Button -->
+                    <div class="col-lg-2">
+                        <a class="btn w-100">SEARCH</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- search bar end -->
+        <!-- gallery  -->
+        <section class="gallery py-5">
+            <div class="container py-4">
+                <div class="row g-4">
+
+                    <!-- Card Template -->
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card position-relative text-center p-3">
+                            <span class="sale-badge">SALE</span>
+                            <img src="./assets/image/spare-grid1.png" class="card-img-top mx-auto" alt="Battery">
+                            <div class="card-body">
+                                <h5 class="card-title">Battery</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Repeat below block with changes for each part -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center p-3">
+                            <img src="./assets/image/spare-grid2.png" class="card-img-top mx-auto" alt="Tire">
+                            <div class="card-body">
+                                <h5 class="card-title">Tire</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card position-relative text-center p-3">
+                            <span class="sale-badge">SALE</span>
+                            <img src="./assets/image/spare-grid3.png" class="card-img-top mx-auto" alt="Brake">
+                            <div class="card-body">
+                                <h5 class="card-title">Brake</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center p-3">
+                            <img src="./assets/image/spare-gride4.png" class="card-img-top mx-auto" alt="Lights">
+                            <div class="card-body">
+                                <h5 class="card-title">Lights</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Second Row -->
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card position-relative text-center p-3">
+                            <span class="sale-badge">SALE</span>
+                            <img src="./assets/image/spare-gride5.png" class="card-img-top mx-auto" alt="Clutch">
+                            <div class="card-body">
+                                <h5 class="card-title">Clutch</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center p-3">
+                            <img src="./assets/image/spare-gride6.png" class="card-img-top mx-auto" alt="Mirror">
+                            <div class="card-body">
+                                <h5 class="card-title">Mirror</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card text-center p-3">
+                            <img src="./assets/image/spare-gride7.png" class="card-img-top mx-auto" alt="Body part">
+                            <div class="card-body">
+                                <h5 class="card-title">Body part</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="card position-relative text-center p-3">
+                            <span class="sale-badge">SALE</span>
+                            <img src="./assets/image/spare-gride8.png" class="card-img-top mx-auto" alt="Steering">
+                            <div class="card-body">
+                                <h5 class="card-title">Steering</h5>
+                                <p class="card-text text-muted">Available all the brands</p>
+                                <a href="#" class="btn">Explore Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- gallery end -->
+
+        <!-- company section -->
+        <section class="companys py-5">
+            <div class="container">
+                <swiper-container class="mySwiper" slides-per-view="5" loop="true" centered-slides="true"
+                    space-between="30" autoplay-delay="500" autoplay-disable-on-interaction="false">
+                    <swiper-slide>
+                        <img src="./assets/image/swiper1.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper2.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper3.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper4.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper5.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper6.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper1.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper2.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper3.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper4.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper5.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper6.png" alt="logos">
+                    </swiper-slide>
+
+                </swiper-container>
+            </div>
+        </section>
+        <!-- company section end -->
+        <!-- faq  -->
+        <section class="faq py-5">
+            <div class="container ">
+                <div class="row g-4 align-items-start">
+
+                    <!-- FAQ Left -->
+                    <div class="col-md-7">
+                        <h4><strong>Frequently <span class="text-danger">Asked</span> Question</strong></h4>
+                        <div class="accordion mt-4" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What all do you check during inspection of our car ?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We perform a full-body and engine checkup...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Will you charge for our car inspection?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Charges depend on the type of inspection
+                                        requested.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Do Carune provide home inspection for car?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, we offer home inspection in select areas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Can I book my appointment through mobile APP ?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, our mobile app supports appointment
+                                        booking.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        What all kind of services do Carune provide?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We offer repair, maintenance, diagnostics, etc.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+                                        What sort of spare parts and engine oils are used in the servicing?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We use OEM-grade parts and high-quality engine
+                                        oils.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Contact Box -->
+                    <div class="col-md-5">
+                        <h4 class="fw-bold">Have Any <span class="text-danger">Questions</span>?</h4>
+                        <div class="contact-card p-4 mt-3 position-relative">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-phone-volume text-danger fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold mb-1">+99 435 7654 768</h5>
+                            <p class="mb-0 text-danger small">Support@carune.in</p>
+                            <a href="#" class="ribbon">Get Your Tech Now!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- faq section end -->
+
+    </main>
+    <!-- foot  -->
+    <footer class="footer" id="contact">
+        <div class="container text-center text-white">
+            <h2 class="mb-1 text-danger">
+                <img src="./assets/image/logo.png" alt="logo">
+            </h2>
+            <p class="mb-2 small">Do you have a question? Feel free to contact</p>
+            <h5 class="text-light mb-4">CONTACT US</h5>
+
+            <div class="row align-items-center text-md-center mb-4">
+                <div class="col-md-12 py-4">
+                    <div class="row g-3 text-danger text-center ">
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <h6 class="mb-1">Address:</h6>
+                                <p class="mb-0 small">Newtown , Kolkata</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-envelope icon"></i>
+                                <h6 class="mb-1">Email Address:</h6>
+                                <p class="mb-0 small">Carune34@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-phone icon"></i>
+                                <h6 class="mb-1">Contact No:</h6>
+                                <p class="mb-0 small">+91-1234567890</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-user icon"></i>
+                                <h6 class="mb-2">Follow Us</h6>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <i class="fab fa-facebook-f text-danger"></i>
+                                    <i class="fab fa-twitter text-danger"></i>
+                                    <i class="fab fa-instagram text-danger"></i>
+                                    <i class="fab fa-youtube text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-start text-white bg-dark p-4">
+                <div class="col-md-3">
+                    <h6>Our Services</h6>
+                    <ul class="list-unstyled small">
+                        <li>Repair</li>
+                        <li>Maintenance</li>
+                        <li>Diagnostic</li>
+                        <li>Oil Change</li>
+                        <li>Brake Repair Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled small">
+                        <li>About Company</li>
+                        <li>Spares</li>
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li>Careers</li>
+                        <li>Features</li>
+                        <li>Customer Feedback</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Get Our Newsletter</h6>
+                    <p class="small">If you want weekly updates about new offers and discounts, signup below.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control  bg-danger border-0 text-white"
+                            placeholder="Enter your email address">
+                        <a class="btn"><i class="fas fa-arrow-right text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            .<div class="mt-4 bg-danger text-white p-2">
+                <p class="small mb-0">© 2023 Carune. All rights reserved.</p>
+            </div>
+    </footer>
+    <!-- foot end -->
+
+    <!-- proper js  -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <!-- my js  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

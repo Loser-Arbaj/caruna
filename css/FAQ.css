@@ -1,0 +1,130 @@
+       /* color =============== */
+       :root {
+           --primary-color: #ff2d00;
+           --text-color: #000000;
+           --border-color: #ffffff;
+           --eee: #d3d0d0;
+           --dark: #0000009b;
+       }
+
+       /* ======================= */
+
+
+       /* navbar ================ */
+       a {
+           text-decoration: none;
+           color: var(--text-color);
+           transition: 0.3s;
+       }
+
+       a:hover {
+           border-bottom: var(--primary-color) 1px solid;
+       }
+
+       .navbar-brand span {
+           color: var(--primary-color);
+           font-weight: bold;
+           font-size: 22px;
+       }
+
+       .navbar-nav .nav-link.active,
+       .navbar-nav .nav-link:hover {
+           color: var(--primary-color);
+       }
+
+       .active {
+           color: var(--primary-color);
+       }
+
+       .plane:hover {
+           color: var(--primary-color);
+       }
+
+       /* =========================================== */
+       /* btn ================== */
+       .btn {
+           background-color: var(--primary-color);
+           color: var(--border-color);
+           font-weight: 500;
+           padding: 8px 16px;
+           border-radius: 6px;
+           border: var(--primary-color) 1px solid;
+           transition: 0.3s;
+       }
+
+       .btn-new {
+           color: var(--primary-color);
+           background-color: var(--border-color);
+           font-weight: 500;
+           padding: 8px 16px;
+           border-radius: 6px;
+           border: var(--primary-color) 1px solid;
+           transition: 0.3s;
+           cursor: pointer;
+       }
+
+       .btn:hover {
+           color: var(--primary-color);
+           border: var(--primary-color) 1px solid;
+       }
+
+       .btn-new:hover {
+           color: var(--border-color);
+           background-color: var(--primary-color);
+           border: var(--primary-color) 1px solid;
+       }
+
+       /* ==================================== */
+       /* banner ============================= */
+       .highlight {
+           color: var(--primary-color);
+       }
+
+       .banner {
+           background-color: var(--dark);
+           background-image: url(../assets/image/faq-banner.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-blend-mode: multiply;
+           height: 300px;
+       }
+
+       .banner h1 {
+           font-weight: 700;
+       }
+
+
+
+
+
+
+
+
+
+
+
+       .footer {
+           background: var(--dark);
+       }
+
+       .footer i {
+           color: var(--primary-color);
+           font-size: 14px;
+       }
+
+
+
+       .footer h6 {
+           color: var(--border-color);
+           margin-bottom: 10px;
+       }
+
+       .footer ul li:hover {
+           color: var(--primary-color);
+           cursor: pointer;
+       }
+
+       .footer input::placeholder {
+           font-size: 14px;
+           color: var(--border-color);
+       }

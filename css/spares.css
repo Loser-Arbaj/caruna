@@ -1,0 +1,60 @@
+       .banner {
+           background-color: var(--dark);
+           background-image: url(../assets/image/spares-banner.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-blend-mode: multiply;
+           height: 300px;
+       }
+
+       .hehe {
+           display: flex;
+           justify-content: space-between;
+           flex-wrap: wrap;
+           gap: 20px;
+       }
+
+       .hehe .card {
+           padding: 20px;
+           text-align: center;
+           border-radius: 10px;
+           background-color: var(--light);
+           transition: transform 0.3s, box-shadow 0.3s;
+           height: 350px;
+       }
+
+       .hehe .card img {
+           margin-bottom: 30px;
+           max-width: 30px;
+           width: 100%;
+       }
+
+       .page-title {
+           font-size: 26px;
+           margin-bottom: 5px;
+       }
+
+       .page-subtitle {
+           margin-bottom: 30px;
+           font-size: 18px;
+       }
+
+       .card img {
+           max-height: 130px;
+           object-fit: contain;
+       }
+
+       .card:hover {
+           transform: translateY(-5px);
+       }
+
+       .sale-badge {
+           position: absolute;
+           top: 10px;
+           right: 10px;
+           background-color: #28a745;
+           color: white;
+           font-size: 12px;
+           padding: 2px 8px;
+           border-radius: 3px;
+       }

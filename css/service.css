@@ -1,0 +1,17 @@
+       .banner {
+           background-color: var(--dark);
+           background-image: url(../assets/image/service-banner.png);
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-blend-mode: multiply;
+           height: 300px;
+       }
+
+       .banner h1 {
+           font-weight: 700;
+       }
+
+       .serve-cards .card:hover {
+           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+           transform: translateY(-5px);
+       }

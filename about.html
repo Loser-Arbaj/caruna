@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- custom css -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/about.css">
+</head>
+
+<body>
+
+    <!-- <header section -->
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <img src="./assets/image/logo.png" alt="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav me-3 mb-2 mb-lg-0 gap-4">
+                        <li class="nav-item">
+                            <a class="nav-link" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  active" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./service.html">Service</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./spares.html">Spares</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./FAQ.html">FAQ</a>
+                        </li>
+                        <li class="nav-item d-flex align-items-center">
+                            <a href="./login.html" class="small-link position-relative">
+                                <i class=" fa-solid fa-cart-shopping text-dark plane"></i>
+                                <span
+                                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                    0
+                                    <span class="visually-hidden">unread messages</span>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="./login.html" class="btn">
+                                <i class="fa-solid fa-user"></i>
+                                <span>Account</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+    <main>
+        <!-- banner  -->
+        <section class="banner">
+            <div class="container">
+                <div class="mb-2 text-muted">
+                    <small><strong> Home > </strong>About us</small>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2><strong>Why <span class="text-danger">choose</span> Us</strong></h2>
+                        <p class="mt-3">
+                            Welcome to Carune, your go-to online platform for hassle-free and reliable multi-brand car
+                            repair and services.
+                            Tired of searching endlessly for “car repair shops near me” or “auto shop near me”? Look no
+                            further.
+                            With Carune, professional car maintenance is just a click away, right at your doorstep at
+                            the most reasonable price.
+                            No matter if you have a SUV or a Sedan or anything else, we cater to your need for “best car
+                            repair services near me”.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/image/about-banner1.png" class="img-fluid rounded shadow-sm"
+                            alt="Mechanic working on car" />
+                    </div>
+                </div>
+                <div class="row align-items-center flex-row-reverse py-5">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2><strong>Why <span class="text-danger">choose</span> Us</strong></h2>
+                        <p class="mt-3">
+                            Welcome to Carune, your go-to online platform for hassle-free and reliable multi-brand car
+                            repair and services.
+                            Tired of searching endlessly for “car repair shops near me” or “auto shop near me”? Look no
+                            further.
+                            With Carune, professional car maintenance is just a click away, right at your doorstep at
+                            the most reasonable price.
+                            No matter if you have a SUV or a Sedan or anything else, we cater to your need for “best car
+                            repair services near me”.
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="./assets/image/about-banner2.png" class="img-fluid rounded shadow-sm"
+                            alt="Mechanic working on car" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner end -->
+        <!-- commitment -->
+        <section class="commitmentt py-5 text-center bg-light">
+            <div class="container">
+                <h2 class="fw-bold">Commitment <span class="text-danger">We</span> Give</h2>
+                <p class="text-muted mb-5">Commitment To Quality And Innovation In Every Service</p>
+
+                <div class="row g-4 justify-content-center">
+
+                    <!-- Card 1 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="commit-box p-4 shadow-sm rounded text-center bg-white h-100">
+                            <img src="./assets/image/about1.png" alt="Genuine Parts" class="mb-3 icon-img" width="50">
+                            <h6 class="fw-bold">Genuine Parts</h6>
+                            <p class="small text-muted mb-0">Top-notch quality with OEM/OES spares only.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="commit-box p-4 shadow-sm rounded text-center bg-white h-100">
+                            <img src="./assets/image/about2.png" alt="Transparent" class="mb-3 icon-img" width="50">
+                            <h6 class="fw-bold">Transparent</h6>
+                            <p class="small text-muted mb-0">24x7 assistance and live status updates.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="commit-box p-4 shadow-sm rounded text-center bg-white h-100">
+                            <img src="./assets/image/about3.png" alt="Hassle-Free" class="mb-3 icon-img" width="50">
+                            <h6 class="fw-bold">Hassle-Free</h6>
+                            <p class="small text-muted mb-0">Services delivered through bespoke solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="col-sm-6 col-lg-3">
+                        <div class="commit-box p-4 shadow-sm rounded text-center bg-white h-100">
+                            <img src="./assets/image/about4.png" alt="Honest Pricing" class="mb-3 icon-img" width="50">
+                            <h6 class="fw-bold">Honest Pricing</h6>
+                            <p class="small text-muted mb-0">Best quote in the industry for your car service.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- commitment end -->
+        <!-- why section  -->
+        <section class="why-carune py-5">
+            <div class="container text-center">
+                <h3 class="fw-bold mb-4">Why opt for <span class="text-danger">Carune</span> for your Car Repair
+                    Services?</h3>
+                <div class="row text-start">
+                    <div class="col-md-12">
+                        <h5 class="text-danger fw-bold">1. Trustworthy and reliable</h5>
+                        <p>Carune is your most trusted and reliable car service center because we understand the worth
+                            of your car and employ the best certified technicians with multi-brand expertise to handle
+                            your car. Our skilled professionals guarantee precision and reliability in every repair.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h5 class="text-danger fw-bold">2. Skilled technicians with advanced tools</h5>
+                        <p>At every Carune workshop, we only have technicians who meet industry standards and conduct
+                            diagnosis with advanced equipment to ensure accurate vehicle examination before every
+                            service. This enables us to provide reliable insights into your vehicle's health.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <h5 class="text-danger fw-bold">3. On-time delivery</h5>
+                        <p>At Carune, we prioritize customer satisfaction and deliver what we promise. Whether it's
+                            routine car repair, car wash, or any car-related service, we value your time and ensure
+                            timely delivery of your car.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- why section End  -->
+        <!-- how section  -->
+        <section class="how-we-work py-5">
+            <div class="container text-center">
+                <h3 class="fw-bold mb-3">How <span class="text-danger">We</span> Work</h3>
+                <p class="text-muted mb-5">Commitment To Quality And Innovation In Every Service</p>
+                <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="work-card">
+                            <img src="./assets/image/combo-about.png" alt="Select Your Car" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="work-card">
+                            <img src="./assets/image/combo-about2.png" alt="Free Pick-Up & Drop" class="img-fluid">
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="work-card ">
+                            <img src="./assets/image/combo-about3.png" alt="Live Tracking" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- how section end  -->
+        <!-- booking section -->
+        <section class="booking-steps py-5">
+            <div class="container">
+                <h3 class="fw-bold text-center mb-4">
+                    Booking a <span class="text-danger">car repair service</span> with Carune is simple and easy.
+                </h3>
+                <p class="text-center mb-4">Just follow these 5 simple steps.</p>
+                <ol class="list-unstyled">
+                    <li class="mb-3">
+                        <span class="text-danger fw-bold">1.</span> Visit the website <a href="https://www.carune34.com"
+                            class="text-danger">www.carune34.com</a> or download Carune app from Play Store or App
+                        Store.
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-danger fw-bold">2.</span> Fill in the basic details like make and model of
+                        your car and the kind of service you want.
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-danger fw-bold">3.</span> Request the time and place for the pick and drop
+                        service.
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-danger fw-bold">4.</span> VehicleCare expert technicians will pick up the car
+                        from your location at the scheduled time and location.
+                    </li>
+                    <li class="mb-3">
+                        <span class="text-danger fw-bold">5.</span> Sit back and relax and let us do the rest for you.
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <!-- booking section End-->
+
+
+
+
+        <!-- company section -->
+        <section class="companys py-5">
+            <div class="container">
+                <swiper-container class="mySwiper" slides-per-view="5" loop="true" centered-slides="true"
+                    space-between="30" autoplay-delay="500" autoplay-disable-on-interaction="false">
+                    <swiper-slide>
+                        <img src="./assets/image/swiper1.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper2.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper3.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper4.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper5.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper6.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper1.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper2.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper3.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper4.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper5.png" alt="logos">
+                    </swiper-slide>
+                    <swiper-slide>
+                        <img src="./assets/image/swiper6.png" alt="logos">
+                    </swiper-slide>
+
+                </swiper-container>
+            </div>
+        </section>
+        <!-- company section end -->
+        <!-- beginner section -->
+        <section class="Beginner py-5">
+            <div class="container text-center">
+                <h3 class="fw-bold text-start">Our <span class="text-danger">Service</span> Package</h3>
+
+                <div class="row mt-5 g-4">
+                    <!-- Beginner Package -->
+                    <div class="col-md-4">
+                        <div class="card pricing-card h-100">
+                            <div class="card-body">
+                                <h6 class="text-start text-danger fw-semibold">Beginner</h6>
+                                <h4 class="fw-bold text-start text-danger">₹199 <span class="text-dark fw-normal fs-5">/
+                                        Month</span></h4>
+                                <ul class="list-unstyled mt-4 mb-4 text-start">
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Regular Oil Changes
+                                    </li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Tire rotation and
+                                        balance</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> AC Checkup</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Basic Safety
+                                        Inspections</li>
+                                    <li><i class="fa-solid fa-xmark text-muted me-2"></i> <s>Full-fluid flushes</s></li>
+                                    <li><i class="fa-solid fa-xmark text-muted me-2"></i> <s>Support and guidance</s>
+                                    </li>
+                                </ul>
+                                <p class="small text-muted">Each pricing Package is flexible and can be customized</p>
+                                <a class="btn-new mt-3">Buy A Package Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pro Package (Best Choice) -->
+                    <div class="col-md-4">
+                        <div class="card pricing-card best-choice h-100 position-relative">
+                            <div
+                                class="position-absolute top-0 start-50 translate-middle-x bg-danger text-white px-3 py-1 rounded-bottom small fw-semibold">
+                                Best Choice</div>
+                            <div class="card-body">
+                                <h6 class="text-start text-danger fw-semibold">Pro</h6>
+                                <h4 class="fw-bold text-start text-danger">₹399 <span class="text-dark fw-normal fs-5">/
+                                        Month</span></h4>
+                                <ul class="list-unstyled mt-4 mb-4 text-start">
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Up to 6 oil changes per
+                                        year</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Tire Replacement</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Complementary Car Wash
+                                    </li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Battery Testing &
+                                        Replacement</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Engine Diagnostics &
+                                        Tunes Up</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Brake & Steering</li>
+                                </ul>
+                                <p class="small text-muted">Each pricing Package is flexible and can be customized</p>
+                                <a class="btn-new mt-3">Buy A Package Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Starter Package -->
+                    <div class="col-md-4">
+                        <div class="card pricing-card h-100">
+                            <div class="card-body">
+                                <h6 class="text-start text-danger fw-semibold">Starter</h6>
+                                <h4 class="fw-bold text-start text-danger">₹599 <span class="text-dark fw-normal fs-5">/
+                                        Month</span></h4>
+                                <ul class="list-unstyled mt-4 mb-4 text-start">
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> 24/7 roadside
+                                        assistance</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Basic Safety inspection
+                                    </li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Regular Oil change</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Battery Testing &
+                                        Replacement</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Engine Diagnostics &
+                                        Tunes Up</li>
+                                    <li><i class="fa-solid fa-check text-danger me-2"></i> Brake & Steering</li>
+                                </ul>
+                                <p class="small text-muted">Each pricing Package is flexible and can be customized</p>
+                                <a class="btn-new mt-3">Buy A Package Now</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- beginner section end -->
+        <!-- FAQ Section -->
+        <section class="faq py-5">
+            <div class="container ">
+                <div class="row g-4 align-items-start">
+
+                    <!-- FAQ Left -->
+                    <div class="col-md-7">
+                        <h4><strong>Frequently <span class="text-danger">Asked</span> Question</strong></h4>
+                        <div class="accordion mt-4" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq1">
+                                        What all do you check during inspection of our car ?
+                                    </button>
+                                </h2>
+                                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We perform a full-body and engine checkup...
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq2">
+                                        Will you charge for our car inspection?
+                                    </button>
+                                </h2>
+                                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Charges depend on the type of inspection
+                                        requested.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq3">
+                                        Do Carune provide home inspection for car?
+                                    </button>
+                                </h2>
+                                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, we offer home inspection in select areas.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq4">
+                                        Can I book my appointment through mobile APP ?
+                                    </button>
+                                </h2>
+                                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">Yes, our mobile app supports appointment
+                                        booking.</div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq5">
+                                        What all kind of services do Carune provide?
+                                    </button>
+                                </h2>
+                                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We offer repair, maintenance, diagnostics, etc.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" data-bs-toggle="collapse"
+                                        data-bs-target="#faq6">
+                                        What sort of spare parts and engine oils are used in the servicing?
+                                    </button>
+                                </h2>
+                                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">We use OEM-grade parts and high-quality engine
+                                        oils.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Contact Box -->
+                    <div class="col-md-5">
+                        <h4 class="fw-bold">Have Any <span class="text-danger">Questions</span>?</h4>
+                        <div class="contact-card p-4 mt-3 position-relative">
+                            <div class="icon-box mb-3">
+                                <i class="fas fa-phone-volume text-danger fs-2"></i>
+                            </div>
+                            <h5 class="fw-bold mb-1">+99 435 7654 768</h5>
+                            <p class="mb-0 text-danger small">Support@carune.in</p>
+                            <a href="#" class="ribbon">Get Your Tech Now!</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- faq section end -->
+
+    </main>
+    <!-- foot  -->
+    <footer class="footer" id="contact">
+        <div class="container text-center text-white">
+            <h2 class="mb-1 text-danger">
+                <img src="./assets/image/logo.png" alt="logo">
+            </h2>
+            <p class="mb-2 small">Do you have a question? Feel free to contact</p>
+            <h5 class="text-light mb-4">CONTACT US</h5>
+
+            <div class="row align-items-center text-md-center mb-4">
+                <div class="col-md-12 py-4">
+                    <div class="row g-3 text-danger text-center ">
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-map-marker-alt icon"></i>
+                                <h6 class="mb-1">Address:</h6>
+                                <p class="mb-0 small">Newtown , Kolkata</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-envelope icon"></i>
+                                <h6 class="mb-1">Email Address:</h6>
+                                <p class="mb-0 small">Carune34@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-phone icon"></i>
+                                <h6 class="mb-1">Contact No:</h6>
+                                <p class="mb-0 small">+91-1234567890</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3 bg-dark">
+                            <div class="info-box p-3 rounded">
+                                <i class="fas fa-user icon"></i>
+                                <h6 class="mb-2">Follow Us</h6>
+                                <div class="d-flex justify-content-center gap-2">
+                                    <i class="fab fa-facebook-f text-danger"></i>
+                                    <i class="fab fa-twitter text-danger"></i>
+                                    <i class="fab fa-instagram text-danger"></i>
+                                    <i class="fab fa-youtube text-danger"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-start text-white bg-dark p-4">
+                <div class="col-md-3">
+                    <h6>Our Services</h6>
+                    <ul class="list-unstyled small">
+                        <li>Repair</li>
+                        <li>Maintenance</li>
+                        <li>Diagnostic</li>
+                        <li>Oil Change</li>
+                        <li>Brake Repair Service</li>
+                    </ul>
+                </div>
+                <div class="col-md-2">
+                    <h6>Company</h6>
+                    <ul class="list-unstyled small">
+                        <li>About Company</li>
+                        <li>Spares</li>
+                        <li>FAQs</li>
+                        <li>Terms & Conditions</li>
+                        <li>Contact Us</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="list-unstyled small">
+                        <li>Careers</li>
+                        <li>Features</li>
+                        <li>Customer Feedback</li>
+                        <li>Privacy Policy</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h6>Get Our Newsletter</h6>
+                    <p class="small">If you want weekly updates about new offers and discounts, signup below.</p>
+                    <div class="d-flex">
+                        <input type="email" class="form-control  bg-danger border-0 text-white"
+                            placeholder="Enter your email address">
+                        <a class="btn"><i class="fas fa-arrow-right text-white"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            .<div class="mt-4 bg-danger text-white p-2">
+                <p class="small mb-0">© 2023 Carune. All rights reserved.</p>
+            </div>
+    </footer>
+    <!-- foot end -->
+    <!-- proper js  -->
+    <script src=" https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- swiper js  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- bootstrap js  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+        crossorigin="anonymous"></script>
+    <!-- my js  -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
